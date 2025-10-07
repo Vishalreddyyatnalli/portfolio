@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vishal Reddy — Fullstack Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Vishal Reddy</a>
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Hi, I'm Vishal</h1>
+          <p class="lead">Fullstack developer who loves to learn. I build beautiful, responsive web applications and data-driven projects.</p>
+          <div class="cta">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn outline" href="#contact">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <ul class="meta">
+            <li><strong>Email</strong><span>vishalv3332@gmail.com</span></li>
+            <li><strong>Phone</strong><span>+91 7353005402</span></li>
+            <li><strong>Location</strong><span>Bangalore, Karnataka</span></li>
+            <li><strong>LinkedIn</strong><a href="https://www.linkedin.com/in/vishal-reddy-b9947b26a" target="_blank">Profile</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="about container" id="about">
+      <h2>About Me</h2>
+      <p>I am a passionate Fullstack developer with strong foundations in core Python, web development (HTML, CSS, JavaScript), and SQL. I enjoy building end-to-end solutions and learning new technologies quickly.</p>
+    </section>
+
+    <section class="skills container" id="skills">
+      <h2>Technical & Soft Skills</h2>
+      <div class="skill-grid">
+        <div class="skill-card">
+          <h3>Technical</h3>
+          <ul>
+            <li>Core Python & Python programming</li>
+            <li>HTML, CSS, JavaScript</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Soft</h3>
+          <ul>
+            <li>Good communication</li>
+            <li>Team player & interactions</li>
+            <li>Fast adaptability, time management, leadership</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects container" id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project" data-project="crop">
+          <h3>Crop Recommendation System</h3>
+          <p>A machine learning–based model that analyzes soil, weather, and historical data to recommend optimal crops. Built using decision trees / random forest and data preprocessing pipelines.</p>
+          <button class="btn" data-open="crop">Learn more</button>
+        </article>
+
+        <article class="project" data-project="spotify">
+          <h3>Spotify Clone</h3>
+          <p>A responsive music streaming UI with playlists, authentication flow, and media playback to practice fullstack skills using React and Node.js.</p>
+          <button class="btn" data-open="spotify">Learn more</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="education container" id="education">
+      <h2>Education</h2>
+      <p>Bachelor of Engineering in Computer Science — M.S. Engineering College, Bangalore</p>
+      <h3>Certificates</h3>
+      <ul>
+        <li>Infosys Springboard — Techniques for Big Data Analytics</li>
+      </ul>
+    </section>
+
+    <section class="contact container" id="contact">
+      <h2>Contact</h2>
+      <p>I'm open to opportunities and collaborations. Reach out via email or LinkedIn.</p>
+      <div class="contact-cards">
+        <div class="card">
+          <h4>Email</h4>
+          <a href="mailto:vishalv3332@gmail.com">vishalv3332@gmail.com</a>
+        </div>
+        <div class="card">
+          <h4>Phone</h4>
+          <a href="tel:+917353005402">+91 7353005402</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2025 Vishal Reddy — Built with care.</p>
+    </div>
+  </footer>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <button id="modalClose" class="modal-close" aria-label="Close">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
